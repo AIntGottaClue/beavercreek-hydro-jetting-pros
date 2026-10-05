@@ -1,0 +1,8 @@
+---
+import { business } from '../lib/site';
+const { title = 'Describe what is happening. Start with a call.', text = 'Tell us about the affected drain, what you have noticed, and whether hydro jetting may suit the line.' } = Astro.props;
+---
+<section class="band"><div class="band-in">
+  <div><h2>{title}</h2><p>{text}</p></div>
+  <a class="call" href={business.phoneHref}>Call {business.phoneDisplay}</a>
+</div></section>

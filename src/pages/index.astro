@@ -1,0 +1,78 @@
+---
+import Base from '../layouts/Base.astro';
+import Hero from '../components/Hero.astro';
+import Callout from '../components/Callout.astro';
+import { C, services } from '../data/pages';
+import { neighborhoods } from '../data/neighborhoods';
+import { faqSchema } from '../lib/seo';
+import { business } from '../lib/site';
+import { u } from '../lib/utils';
+const home = C['/'];
+const EPA = 'https://www.epa.gov/sites/default/files/2015-10/documents/csossortc2004_appendixl.pdf';
+const GC = 'https://www.greenecountyohio.gov/DocumentCenter/View/178/Checklist---Sewer-Problems-PDF?bidId=';
+const CITY = 'https://www.greenecountyohio.gov/564/Beavercreek';
+const SA = 'https://www.greenecountyohio.gov/2018/Service-Areas';
+const ext = 'target="_blank" rel="noopener noreferrer"';
+const icons: Record<string, string> = {
+  drop: '<path d="M12 2.5c3.4 4.2 6 7.4 6 10.9A6 6 0 0 1 6 13.4c0-3.5 2.6-6.7 6-10.9Z"/>',
+  leaf: '<path d="M5 19c0-9 5-14 15-14 0 10-5 15-14 15l-1 0zM5 19l7-7" fill="none" stroke="currentColor" stroke-width="2"/>',
+  repeat: '<path d="M17 2l4 4-4 4M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4M21 13v2a3 3 0 0 1-3 3H3" fill="none" stroke="currentColor" stroke-width="2"/>',
+  layers: '<path d="M12 3l9 5-9 5-9-5 9-5zM3 13l9 5 9-5" fill="none" stroke="currentColor" stroke-width="2"/>',
+  shield: '<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z" fill="none" stroke="currentColor" stroke-width="2"/>',
+};
+const steps = [
+  { t: 'Describe the problem', d: 'Note which fixtures are slow, whether wastewater has backed up and whether an earlier cleaning helped.' },
+  { t: 'Check the line', d: 'A qualified professional looks for the obstruction and whether the pipe can take high-pressure cleaning.' },
+  { t: 'Match the work', d: 'Buildup may clear with cleaning. A cracked or collapsed section may also need repair.' },
+  { t: 'Confirm the result', d: 'Ask how the crew will know the line is clear and what, if anything, should be watched afterward.' },
+];
+---
+<Base title={home.title} description={home.desc} path="/" extraSchema={[faqSchema(home.faqs)]}>
+  <Hero headline={home.h1} intro={home.intro} location="Homepage" eyebrow="Beavercreek, Ohio" />
+  <section class="sec sec-low"><div class="sec-in">
+    <span class="sec-kicker">Choosing a method</span>
+    <h2 class="sec-title">Hydro jetting or rodding?</h2>
+    <p class="sec-lead">Both clear lines. Neither repairs a damaged pipe, and neither should be picked from the symptom alone.</p>
+    <div class="cmp">
+      <article class="cmp-card"><h3>Hydro jetting</h3>
+        <p set:html={`<a href="${EPA}" ${ext}>The EPA sewer cleaning guidance</a> describes jetting as aiming a high-pressure stream of water at the blockage or debris, with the nozzle shape changed to suit the surface.`} />
+        <p>It is described as most effective in smaller, slow-flowing pipes.</p></article>
+      <article class="cmp-card"><h3>Power rodding</h3>
+        <p>A small rod with a blade attachment turns inside the pipe, loosening debris and cutting roots that reach into it.</p>
+        <p>Ask which method suits the pipe material and the blockage you have.</p></article>
+    </div>
+  </div></section>
+  <section class="sec sec-white"><div class="sec-in">
+    <span class="sec-kicker">Services</span>
+    <h2 class="sec-title">Cleaning matched to the problem</h2>
+    <p class="sec-lead">Pick the kind of blockage you are dealing with. Each page covers what to check and what to ask.</p>
+    <div class="svc-grid">{services.map((s) => <a class="svc" href={u(`/services/${s.slug}/`)}><span class="svc-ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" set:html={icons[s.icon]} /></span><span class="eb">Service</span><h3>{s.name}</h3><p>{s.blurb}</p><span class="arrow">Learn more &rarr;</span></a>)}</div>
+  </div></section>
+  <section class="sec sec-navy"><div class="sec-in">
+    <span class="sec-kicker">Process</span>
+    <h2 class="sec-title">From symptoms to a sensible next step</h2>
+    <p class="sec-lead">Four steps, from describing the problem to confirming the line is clear.</p>
+    <div class="steps">{steps.map((s, i) => <div class="step"><span class="num">{i + 1}</span><h3>{s.t}</h3><p>{s.d}</p></div>)}</div>
+  </div></section>
+  <section class="sec sec-low"><div class="sec-in split">
+    <div>
+      <span class="sec-kicker">Local context</span>
+      <h2 class="sec-title">Who handles what in Beavercreek</h2>
+      <p class="sec-lead" style="margin:0">A drain problem can sit in the county main or in your own lateral. The county checks the first. The second is yours.</p>
+      <div class="callout-box"><p set:html={`<a href="${SA}" ${ext}>Greene County provides sewer service to Beavercreek</a>, and its sewer FAQ says to call the county when a sewer is backing up so it can check whether the problem is in the main or in your lateral.`} /></div>
+      <div class="callout-box"><p set:html={`<a href="${CITY}" ${ext}>Greene County describes Beavercreek</a> as an eastern Dayton suburb of more than 27 square miles, incorporated in 1980, though the area was first settled in the early 1800s.`} /></div>
+    </div>
+    <div class="lb-list">{neighborhoods.filter((n) => ['knollwood','hunters-ridge','sky-crossing','zimmer-estates'].includes(n.slug)).map((n) => <a class="lb" href={u(`/neighborhood/${n.slug}/`)}><h3>{n.name}</h3><p>{n.intro}</p></a>)}</div>
+  </div></section>
+  <section class="sec sec-white"><div class="sec-in">
+    <h2 class="sec-title">Questions worth asking before hydro jetting</h2>
+    <div class="faq">{home.faqs.map((f) => <article><h3>{f.q}</h3><p set:html={f.a} /></article>)}</div>
+  </div></section>
+  <Callout title="Sewage backing up? Call now." text="Keep people away from the affected area, then describe what is happening and whether the line has backed up before." />
+  <section class="sec sec-low"><div class="sec-in">
+    <span class="sec-kicker">Service territory</span>
+    <h2 class="sec-title">Beavercreek neighborhoods</h2>
+    <p class="sec-lead">Read the local background for each Beavercreek neighborhood. Availability has to be confirmed for your address.</p>
+    <div class="pill-grid">{neighborhoods.map((n) => <a class="pill" href={u(`/neighborhood/${n.slug}/`)}>{n.name}</a>)}</div>
+  </div></section>
+</Base>

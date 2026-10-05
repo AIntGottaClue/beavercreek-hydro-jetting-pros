@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/Base.astro';
+import Hero from '../../components/Hero.astro';
+import Callout from '../../components/Callout.astro';
+import { services, guides } from '../../data/pages';
+import { neighborhoods } from '../../data/neighborhoods';
+import { u } from '../../lib/utils';
+const title = 'Hydro Jetting Services in Beavercreek, OH';
+const description = 'Hydro jetting for grease, roots, recurring clogs, mineral buildup and maintenance on drain and sewer lines in Beavercreek, Ohio.';
+---
+<Base title={title} description={description} path="/services/" crumbs={[{ name: 'Services', path: '/services/' }]}>
+  <Hero headline="Hydro Jetting Services in Beavercreek, OH" intro="Each service page covers a different kind of blockage and when a closer look at the pipe matters." location="Services" crumbs={[{ href: '/services/', label: 'Services' }]} />
+  <section class="sec sec-cream"><div class="sec-in">
+    <div class="svc-grid">{services.map((s) => <a class="svc" href={u(`/services/${s.slug}/`)}><span class="eb">Service</span><h3>{s.name}</h3><p>{s.blurb}</p><span class="arrow">Read more &rarr;</span></a>)}</div>
+  </div></section>
+  <Callout />
+</Base>

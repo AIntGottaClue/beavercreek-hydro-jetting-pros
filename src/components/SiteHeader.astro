@@ -1,0 +1,47 @@
+---
+import Logo from './Logo.astro';
+import { navLinks, business } from '../lib/site';
+import { u } from '../lib/utils';
+---
+<header class="site-header">
+  <div class="header-inner">
+    <Logo />
+    <nav class="desktop-nav" aria-label="Main navigation">
+      {navLinks.map((l) => (
+        <div class="nav-item">
+          <a href={u(l.href)}>{l.label}</a>
+          {'children' in l && (
+            <div class="nav-sub"><div class="nav-sub-inner">
+              {l.children.map((a) => <a href={u(a.href)}>{a.label}</a>)}
+            </div></div>
+          )}
+        </div>
+      ))}
+    </nav>
+    <div class="header-actions">
+      <a class="phone-link" href={business.phoneHref}>{business.phoneDisplay}</a>
+      <a class="request-link" href={u('/contact/')}>Request Service</a>
+    </div>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation" data-menu-toggle>Menu</button>
+  </div>
+  <nav class="mobile-nav" id="mobile-navigation" aria-label="Mobile navigation" hidden>
+    {navLinks.map((l) => (
+      <>
+        <a href={u(l.href)}>{l.label}</a>
+        {'children' in l && <div class="mobile-sub">{l.children.map((a) => <a href={u(a.href)}>{a.label}</a>)}</div>}
+      </>
+    ))}
+    <a class="mobile-phone" href={business.phoneHref}>Call {business.phoneDisplay}</a>
+    <a class="mobile-request" href={u('/contact/')}>Request Service</a>
+  </nav>
+</header>
+<script>
+  const btn = document.querySelector('[data-menu-toggle]');
+  const nav = document.getElementById('mobile-navigation');
+  btn?.addEventListener('click', () => {
+    const open = nav.hasAttribute('hidden');
+    if (open) nav.removeAttribute('hidden'); else nav.setAttribute('hidden', '');
+    btn.setAttribute('aria-expanded', String(open));
+    btn.textContent = open ? 'Close' : 'Menu';
+  });
+</script>
