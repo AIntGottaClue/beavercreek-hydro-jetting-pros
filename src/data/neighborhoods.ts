@@ -1,5 +1,5 @@
 export type Hood = { slug:string; name:string; h1:string; title:string; description:string; intro:string; sections:{h:string;ps:string[]}[]; faqs:{q:string;a:string}[]; related:string[]; sources:string[] };
-export const neighborhoods: Hood[] = [
+export const neighborhoods: Hood[] =  [
   {
     "slug": "knollwood",
     "name": "Knollwood",
@@ -14,6 +14,13 @@ export const neighborhoods: Hood[] = [
           "A 1946 plat record in the Greene County archives for <a href=\"https://greeneco.access.preservica.com/index.php/SO_7901f2e2-4cc7-4f68-9c2e-8a2634140c63/\" target=\"_blank\" rel=\"noopener noreferrer\">Knollwood Estates and the Coy Plat</a> lists streets such as Longview, Central, Southview and Northview.",
           "A local heritage trail page says <a href=\"https://www.beavercreekliving.com/book/item/29-book-nineteen\" target=\"_blank\" rel=\"noopener noreferrer\">Knollwood was once a town of its own</a> and grew fastest when returning WWII veterans needed housing, with bungalows alongside prefabricated Sears-Roebuck and Lustron homes.",
           "A <a href=\"http://daytonology.blogspot.com/2008/12/early-versions-of-suburbia-beavercreek.html\" target=\"_blank\" rel=\"noopener noreferrer\">local history blog post on the Beavercreek bungalow belt</a> says the early bungalows on Longview, Central and Shady did not have water or sewer until the 1960s."
+        ]
+      },
+      {
+        "h": "Which services should you ask about in Knollwood?",
+        "ps": [
+          "Ask what is blocking the line before asking for any method. If the answer is roots, <a href=\"/services/tree-root-intrusions/\">hydro jetting for tree roots</a> is the page to read, and if it is deposits, <a href=\"/services/mineral-and-scale-deposits/\">hydro jetting for mineral buildup</a> covers that case.",
+          "<a href=\"/services/severe-grease-and-sludge/\">Grease and sludge</a> and <a href=\"/services/recurring-clogs-and-slow-drains/\">recurring clogs and slow drains</a> cover the two most common reasons a household calls, and <a href=\"/guides/how-hydro-jetting-works/\">how hydro jetting works</a> covers what happens on the job. The <a href=\"/neighborhood/hunters-ridge/\">Hunters Ridge</a> page covers another part of Beavercreek."
         ]
       },
       {
@@ -63,6 +70,13 @@ export const neighborhoods: Hood[] = [
         ]
       },
       {
+        "h": "Which hydro jetting services come up in Hunters Ridge?",
+        "ps": [
+          "A home in Hunters Ridge with a drain that slows down again and again is the case <a href=\"/services/recurring-clogs-and-slow-drains/\">hydro jetting for recurring clogs and slow drains</a> walks through, and a kitchen line that backs up after cooking is the case for <a href=\"/services/severe-grease-and-sludge/\">hydro jetting for grease and sludge</a>.",
+          "If a line clears and then fails again, <a href=\"/services/tree-root-intrusions/\">hydro jetting for tree roots</a> explains how roots are found and what clearing them leaves unsolved. <a href=\"/guides/how-hydro-jetting-works/\">How hydro jetting works</a> describes the method itself. The <a href=\"/neighborhood/hunters-pointe/\">Hunters Pointe</a> page covers another part of Beavercreek."
+        ]
+      },
+      {
         "h": "What should a Hunters Ridge homeowner ask?",
         "ps": [
           "Note which fixtures are slow, whether wastewater has backed up and any repairs you know about, then ask for the line to be checked before work starts. If any digging or repair might follow cleaning, check your section's covenants as well. <a href=\"https://www.greenecountyohio.gov/DocumentCenter/View/178/Checklist---Sewer-Problems-PDF?bidId=\" target=\"_blank\" rel=\"noopener noreferrer\">The Greene County sewer FAQ</a> says the property owner is responsible for the lateral on private property, so it is worth asking whether the cleaning crew can also see the pipe's condition."
@@ -109,6 +123,13 @@ export const neighborhoods: Hood[] = [
         ]
       },
       {
+        "h": "What drain services do homeowners in Hunters Pointe ask about?",
+        "ps": [
+          "Start with the symptom. Water that drains slowly again and again points to <a href=\"/services/recurring-clogs-and-slow-drains/\">recurring clogs and slow drains</a>, while scale or crust inside a line is covered under <a href=\"/services/mineral-and-scale-deposits/\">mineral buildup</a>.",
+          "Once a line is clear, <a href=\"/services/preventative-maintenance/\">preventative hydro jetting</a> covers keeping it that way, and <a href=\"/guides/hydro-jetting-vs-snaking/\">hydro jetting vs snaking</a> compares the two methods if you are deciding. Back on the <a href=\"/\">Beavercreek hydro jetting page</a>, every service for Beavercreek is listed. The <a href=\"/neighborhood/tara-estates/\">Tara Estates</a> page covers another part of Beavercreek."
+        ]
+      },
+      {
         "h": "What should a Hunters Pointe homeowner ask?",
         "ps": [
           "Note which fixtures are slow, whether wastewater has backed up and any repairs you know about, then ask for the line to be checked before work starts. Ask whether a problem is on your lot or in shared common area before work starts. <a href=\"https://www.greenecountyohio.gov/DocumentCenter/View/178/Checklist---Sewer-Problems-PDF?bidId=\" target=\"_blank\" rel=\"noopener noreferrer\">The Greene County sewer FAQ</a> says the property owner is responsible for the lateral on private property, so it is worth asking whether the cleaning crew can also see the pipe's condition."
@@ -151,6 +172,13 @@ export const neighborhoods: Hood[] = [
         "h": "What do we know about drains in Tara Estates?",
         "ps": [
           "Greene County Sanitary Engineering handles sewer service for the city, and <a href=\"https://www.greenecountyohio.gov/2018/Service-Areas\" target=\"_blank\" rel=\"noopener noreferrer\">the county service area page</a> lists Beavercreek among the places it serves. If a sewer is backing up, <a href=\"https://www.greenecountyohio.gov/DocumentCenter/View/178/Checklist---Sewer-Problems-PDF?bidId=\" target=\"_blank\" rel=\"noopener noreferrer\">the county sewer FAQ</a> says to call the county first at (937) 562-7450 so it can check whether the county main or your lateral is the problem."
+        ]
+      },
+      {
+        "h": "How do the services fit homes in Tara Estates?",
+        "ps": [
+          "Each service page answers one question. <a href=\"/services/severe-grease-and-sludge/\">Grease and sludge</a> is for kitchen lines that back up, <a href=\"/services/tree-root-intrusions/\">tree roots</a> is for lines where roots may have gotten in, and <a href=\"/services/mineral-and-scale-deposits/\">mineral buildup</a> is for deposits that narrow a pipe over time.",
+          "If none of those sounds like your drain, <a href=\"/services/recurring-clogs-and-slow-drains/\">recurring clogs and slow drains</a> is the broader page, and <a href=\"/guides/how-hydro-jetting-works/\">how hydro jetting works</a> explains what the work involves before you ask anyone to do it. The <a href=\"/neighborhood/woods-of-beavercreek/\">The Woods of Beavercreek</a> page covers another part of Beavercreek."
         ]
       },
       {
@@ -200,6 +228,13 @@ export const neighborhoods: Hood[] = [
         ]
       },
       {
+        "h": "Which hydro jetting pages are worth reading before a request in the Woods of Beavercreek?",
+        "ps": [
+          "Read <a href=\"/guides/how-hydro-jetting-works/\">how hydro jetting works</a> first if the method is new to you. Then pick the page that matches what the drain is doing: <a href=\"/services/recurring-clogs-and-slow-drains/\">recurring clogs</a>, <a href=\"/services/severe-grease-and-sludge/\">grease and sludge</a> or <a href=\"/services/tree-root-intrusions/\">tree roots</a>.",
+          "<a href=\"/services/preventative-maintenance/\">Preventative hydro jetting</a> is the page for a line that is working now and that you want to keep clear. The <a href=\"/\">Beavercreek hydro jetting page</a> lists the rest for Beavercreek. The <a href=\"/neighborhood/woodside-park/\">Woodside Park</a> page covers another part of Beavercreek."
+        ]
+      },
+      {
         "h": "What should a Woods homeowner ask?",
         "ps": [
           "Note which fixtures are slow, whether wastewater has backed up and any repairs you know about, then ask for the line to be checked before work starts. <a href=\"https://www.greenecountyohio.gov/DocumentCenter/View/178/Checklist---Sewer-Problems-PDF?bidId=\" target=\"_blank\" rel=\"noopener noreferrer\">The Greene County sewer FAQ</a> says the property owner is responsible for the lateral on private property, so it is worth asking whether the cleaning crew can also see the pipe's condition."
@@ -242,6 +277,13 @@ export const neighborhoods: Hood[] = [
         "h": "What do we know about drains in Woodside Park?",
         "ps": [
           "Plumbing permits in Beavercreek come from the county, not the city. <a href=\"https://beavercreekohio.gov/FAQ.aspx?QID=82\" target=\"_blank\" rel=\"noopener noreferrer\">The city of Beavercreek says</a> it only issues zoning permits, and that building, plumbing, electrical and HVAC permits come from Greene County Building Regulation, so ask before any repair beyond cleaning."
+        ]
+      },
+      {
+        "h": "What kind of drain problem are you seeing in Woodside Park?",
+        "ps": [
+          "A blockage that keeps coming back usually raises two questions, whether roots are involved and whether grease is building up. <a href=\"/services/tree-root-intrusions/\">Hydro jetting for tree roots</a> takes the first, and <a href=\"/services/severe-grease-and-sludge/\">hydro jetting for grease and sludge</a> takes the second.",
+          "<a href=\"/services/mineral-and-scale-deposits/\">Mineral buildup</a> covers scale inside older lines, and <a href=\"/guides/hydro-jetting-vs-snaking/\">hydro jetting vs snaking</a> helps you compare the methods. The <a href=\"/\">Beavercreek hydro jetting page</a> gives the full picture for Beavercreek. The <a href=\"/neighborhood/spicer-heights/\">Spicer Heights</a> page covers another part of Beavercreek."
         ]
       },
       {
@@ -291,6 +333,13 @@ export const neighborhoods: Hood[] = [
         ]
       },
       {
+        "h": "Which services does a line in Spicer Heights usually need to look at?",
+        "ps": [
+          "For a line that clogs on and off, <a href=\"/services/recurring-clogs-and-slow-drains/\">hydro jetting for recurring clogs and slow drains</a> is the first page to read. A kitchen line that smells or backs up is better matched by <a href=\"/services/severe-grease-and-sludge/\">hydro jetting for grease and sludge</a>.",
+          "<a href=\"/services/preventative-maintenance/\">Preventative hydro jetting</a> and <a href=\"/services/mineral-and-scale-deposits/\">mineral buildup</a> cover upkeep and scale, and <a href=\"/guides/how-hydro-jetting-works/\">how hydro jetting works</a> covers the method. The <a href=\"/neighborhood/shaker-estates/\">Shaker Estates</a> page covers another part of Beavercreek."
+        ]
+      },
+      {
         "h": "What should a Spicer Heights homeowner ask?",
         "ps": [
           "Note which fixtures are slow, whether wastewater has backed up and any repairs you know about, then ask for the line to be checked before work starts. <a href=\"https://www.greenecountyohio.gov/DocumentCenter/View/178/Checklist---Sewer-Problems-PDF?bidId=\" target=\"_blank\" rel=\"noopener noreferrer\">The Greene County sewer FAQ</a> says the property owner is responsible for the lateral on private property, so it is worth asking whether the cleaning crew can also see the pipe's condition."
@@ -333,6 +382,13 @@ export const neighborhoods: Hood[] = [
         "h": "What do we know about drains in Shaker Estates?",
         "ps": [
           "<a href=\"https://www.greenecountyohio.gov/DocumentCenter/View/178/Checklist---Sewer-Problems-PDF?bidId=\" target=\"_blank\" rel=\"noopener noreferrer\">The Greene County sewer FAQ</a> names grease, roots, obstructions and structural damage as the usual causes of lateral trouble. For grease, roots or obstructions it says the homeowner is responsible for cleaning the lateral to the sewer main."
+        ]
+      },
+      {
+        "h": "Where do the hydro jetting services fit for homes in Shaker Estates?",
+        "ps": [
+          "Think of the services as answers to different questions. <a href=\"/services/recurring-clogs-and-slow-drains/\">Recurring clogs</a> answers why a drain keeps slowing, <a href=\"/services/tree-root-intrusions/\">tree roots</a> answers whether roots are the cause, and <a href=\"/services/severe-grease-and-sludge/\">grease and sludge</a> answers what a kitchen line is carrying.",
+          "If you are weighing options, <a href=\"/guides/hydro-jetting-vs-snaking/\">hydro jetting vs snaking</a> sets the methods side by side, and <a href=\"/services/preventative-maintenance/\">preventative hydro jetting</a> covers staying ahead of a repeat. The <a href=\"/\">Beavercreek hydro jetting page</a> lists all of them. The <a href=\"/neighborhood/kingswood-forest/\">Kingswood Forest</a> page covers another part of Beavercreek."
         ]
       },
       {
@@ -382,6 +438,13 @@ export const neighborhoods: Hood[] = [
         ]
       },
       {
+        "h": "Which services should you ask about in Kingswood Forest?",
+        "ps": [
+          "Ask what is blocking the line before asking for any method. If the answer is roots, <a href=\"/services/tree-root-intrusions/\">hydro jetting for tree roots</a> is the page to read, and if it is deposits, <a href=\"/services/mineral-and-scale-deposits/\">hydro jetting for mineral buildup</a> covers that case.",
+          "<a href=\"/services/severe-grease-and-sludge/\">Grease and sludge</a> and <a href=\"/services/recurring-clogs-and-slow-drains/\">recurring clogs and slow drains</a> cover the two most common reasons a household calls, and <a href=\"/guides/how-hydro-jetting-works/\">how hydro jetting works</a> covers what happens on the job. The <a href=\"/neighborhood/stonegate-ii/\">Stonegate II</a> page covers another part of Beavercreek."
+        ]
+      },
+      {
         "h": "What should a Kingswood Forest owner ask?",
         "ps": [
           "Note which fixtures are slow, whether wastewater has backed up and any repairs you know about, then ask for the line to be checked before work starts. <a href=\"https://www.greenecountyohio.gov/DocumentCenter/View/178/Checklist---Sewer-Problems-PDF?bidId=\" target=\"_blank\" rel=\"noopener noreferrer\">The Greene County sewer FAQ</a> says the property owner is responsible for the lateral on private property, so it is worth asking whether the cleaning crew can also see the pipe's condition."
@@ -425,6 +488,13 @@ export const neighborhoods: Hood[] = [
         "ps": [
           "Ohio business records list <a href=\"https://ohio-corp.com/co/stonegate-ii-homeowners-association\" target=\"_blank\" rel=\"noopener noreferrer\">Stonegate II Homeowners Association as incorporated on August 13, 2004</a>, a nonprofit corporation in Beavercreek.",
           "A newer subdivision usually means newer pipe, which still can be blocked by grease or damaged by roots. Ask what the line is made of before work starts."
+        ]
+      },
+      {
+        "h": "Which hydro jetting services come up in Stonegate II?",
+        "ps": [
+          "A home in Stonegate II with a drain that slows down again and again is the case <a href=\"/services/recurring-clogs-and-slow-drains/\">hydro jetting for recurring clogs and slow drains</a> walks through, and a kitchen line that backs up after cooking is the case for <a href=\"/services/severe-grease-and-sludge/\">hydro jetting for grease and sludge</a>.",
+          "If a line clears and then fails again, <a href=\"/services/tree-root-intrusions/\">hydro jetting for tree roots</a> explains how roots are found and what clearing them leaves unsolved. <a href=\"/guides/how-hydro-jetting-works/\">How hydro jetting works</a> describes the method itself. The <a href=\"/neighborhood/summerfield/\">Summerfield</a> page covers another part of Beavercreek."
         ]
       },
       {
@@ -474,6 +544,13 @@ export const neighborhoods: Hood[] = [
         ]
       },
       {
+        "h": "What drain services do homeowners in Summerfield ask about?",
+        "ps": [
+          "Start with the symptom. Water that drains slowly again and again points to <a href=\"/services/recurring-clogs-and-slow-drains/\">recurring clogs and slow drains</a>, while scale or crust inside a line is covered under <a href=\"/services/mineral-and-scale-deposits/\">mineral buildup</a>.",
+          "Once a line is clear, <a href=\"/services/preventative-maintenance/\">preventative hydro jetting</a> covers keeping it that way, and <a href=\"/guides/hydro-jetting-vs-snaking/\">hydro jetting vs snaking</a> compares the two methods if you are deciding. Back on the <a href=\"/\">Beavercreek hydro jetting page</a>, every service for Beavercreek is listed. The <a href=\"/neighborhood/apple-valley-estates/\">Apple Valley Estates</a> page covers another part of Beavercreek."
+        ]
+      },
+      {
         "h": "What should a Summerfield homeowner ask?",
         "ps": [
           "Note which fixtures are slow, whether wastewater has backed up and any repairs you know about, then ask for the line to be checked before work starts. <a href=\"https://www.greenecountyohio.gov/DocumentCenter/View/178/Checklist---Sewer-Problems-PDF?bidId=\" target=\"_blank\" rel=\"noopener noreferrer\">The Greene County sewer FAQ</a> says the property owner is responsible for the lateral on private property, so it is worth asking whether the cleaning crew can also see the pipe's condition."
@@ -517,6 +594,13 @@ export const neighborhoods: Hood[] = [
         "ps": [
           "The Greene County archives hold a record for <a href=\"https://greeneco.access.preservica.com/index.php/SO_6cec9c52-c85c-428e-ad4d-08fa3b5081c3/\" target=\"_blank\" rel=\"noopener noreferrer\">Apple Valley Estates Number 2, Sections 6, 7 and 8</a> dated July 1958 and September 1965.",
           "<a href=\"https://www.greenecountyohio.gov/DocumentCenter/View/178/Checklist---Sewer-Problems-PDF?bidId=\" target=\"_blank\" rel=\"noopener noreferrer\">The Greene County sewer FAQ</a> says the cleaning equipment should suit the lateral material, such as clay or PVC. Ask what your older line is made of before any high-pressure work."
+        ]
+      },
+      {
+        "h": "How do the services fit homes in Apple Valley Estates?",
+        "ps": [
+          "Each service page answers one question. <a href=\"/services/severe-grease-and-sludge/\">Grease and sludge</a> is for kitchen lines that back up, <a href=\"/services/tree-root-intrusions/\">tree roots</a> is for lines where roots may have gotten in, and <a href=\"/services/mineral-and-scale-deposits/\">mineral buildup</a> is for deposits that narrow a pipe over time.",
+          "If none of those sounds like your drain, <a href=\"/services/recurring-clogs-and-slow-drains/\">recurring clogs and slow drains</a> is the broader page, and <a href=\"/guides/how-hydro-jetting-works/\">how hydro jetting works</a> explains what the work involves before you ask anyone to do it. The <a href=\"/neighborhood/fairbrook-estates/\">Fairbrook Estates</a> page covers another part of Beavercreek."
         ]
       },
       {
@@ -566,6 +650,13 @@ export const neighborhoods: Hood[] = [
         ]
       },
       {
+        "h": "Which hydro jetting pages are worth reading before a request in Fairbrook Estates?",
+        "ps": [
+          "Read <a href=\"/guides/how-hydro-jetting-works/\">how hydro jetting works</a> first if the method is new to you. Then pick the page that matches what the drain is doing: <a href=\"/services/recurring-clogs-and-slow-drains/\">recurring clogs</a>, <a href=\"/services/severe-grease-and-sludge/\">grease and sludge</a> or <a href=\"/services/tree-root-intrusions/\">tree roots</a>.",
+          "<a href=\"/services/preventative-maintenance/\">Preventative hydro jetting</a> is the page for a line that is working now and that you want to keep clear. The <a href=\"/\">Beavercreek hydro jetting page</a> lists the rest for Beavercreek. The <a href=\"/neighborhood/ferguson-estates/\">Ferguson Estates</a> page covers another part of Beavercreek."
+        ]
+      },
+      {
         "h": "What should a Fairbrook homeowner ask?",
         "ps": [
           "Note which fixtures are slow, whether wastewater has backed up and any repairs you know about, then ask for the line to be checked before work starts. <a href=\"https://www.greenecountyohio.gov/DocumentCenter/View/178/Checklist---Sewer-Problems-PDF?bidId=\" target=\"_blank\" rel=\"noopener noreferrer\">The Greene County sewer FAQ</a> says the property owner is responsible for the lateral on private property, so it is worth asking whether the cleaning crew can also see the pipe's condition."
@@ -612,6 +703,13 @@ export const neighborhoods: Hood[] = [
         ]
       },
       {
+        "h": "What kind of drain problem are you seeing in Ferguson Estates?",
+        "ps": [
+          "A blockage that keeps coming back usually raises two questions, whether roots are involved and whether grease is building up. <a href=\"/services/tree-root-intrusions/\">Hydro jetting for tree roots</a> takes the first, and <a href=\"/services/severe-grease-and-sludge/\">hydro jetting for grease and sludge</a> takes the second.",
+          "<a href=\"/services/mineral-and-scale-deposits/\">Mineral buildup</a> covers scale inside older lines, and <a href=\"/guides/hydro-jetting-vs-snaking/\">hydro jetting vs snaking</a> helps you compare the methods. The <a href=\"/\">Beavercreek hydro jetting page</a> gives the full picture for Beavercreek. The <a href=\"/neighborhood/green-meadows/\">Green Meadows</a> page covers another part of Beavercreek."
+        ]
+      },
+      {
         "h": "What should a Ferguson Estates homeowner ask?",
         "ps": [
           "Note which fixtures are slow, whether wastewater has backed up and any repairs you know about, then ask for the line to be checked before work starts. <a href=\"https://www.greenecountyohio.gov/DocumentCenter/View/178/Checklist---Sewer-Problems-PDF?bidId=\" target=\"_blank\" rel=\"noopener noreferrer\">The Greene County sewer FAQ</a> says the property owner is responsible for the lateral on private property, so it is worth asking whether the cleaning crew can also see the pipe's condition."
@@ -654,6 +752,13 @@ export const neighborhoods: Hood[] = [
         "h": "What do we know about drains in Green Meadows?",
         "ps": [
           "If a sewer is backing up, <a href=\"https://www.greenecountyohio.gov/DocumentCenter/View/178/Checklist---Sewer-Problems-PDF?bidId=\" target=\"_blank\" rel=\"noopener noreferrer\">the county sewer FAQ</a> says to call Greene County Sanitary Engineering first so it can check whether the county main or your lateral is the problem. After that, it recommends hiring a qualified plumber to investigate the source."
+        ]
+      },
+      {
+        "h": "Which services does a line in Green Meadows usually need to look at?",
+        "ps": [
+          "For a line that clogs on and off, <a href=\"/services/recurring-clogs-and-slow-drains/\">hydro jetting for recurring clogs and slow drains</a> is the first page to read. A kitchen line that smells or backs up is better matched by <a href=\"/services/severe-grease-and-sludge/\">hydro jetting for grease and sludge</a>.",
+          "<a href=\"/services/preventative-maintenance/\">Preventative hydro jetting</a> and <a href=\"/services/mineral-and-scale-deposits/\">mineral buildup</a> cover upkeep and scale, and <a href=\"/guides/how-hydro-jetting-works/\">how hydro jetting works</a> covers the method. The <a href=\"/neighborhood/sky-crossing/\">Sky Crossing</a> page covers another part of Beavercreek."
         ]
       },
       {
@@ -703,6 +808,13 @@ export const neighborhoods: Hood[] = [
         ]
       },
       {
+        "h": "Where do the hydro jetting services fit for homes in Sky Crossing?",
+        "ps": [
+          "Think of the services as answers to different questions. <a href=\"/services/recurring-clogs-and-slow-drains/\">Recurring clogs</a> answers why a drain keeps slowing, <a href=\"/services/tree-root-intrusions/\">tree roots</a> answers whether roots are the cause, and <a href=\"/services/severe-grease-and-sludge/\">grease and sludge</a> answers what a kitchen line is carrying.",
+          "If you are weighing options, <a href=\"/guides/hydro-jetting-vs-snaking/\">hydro jetting vs snaking</a> sets the methods side by side, and <a href=\"/services/preventative-maintenance/\">preventative hydro jetting</a> covers staying ahead of a repeat. The <a href=\"/\">Beavercreek hydro jetting page</a> lists all of them. The <a href=\"/neighborhood/bent-creek-woods/\">Bent Creek Woods</a> page covers another part of Beavercreek."
+        ]
+      },
+      {
         "h": "What should a Sky Crossing homeowner ask?",
         "ps": [
           "Note which fixtures are slow, whether wastewater has backed up and any repairs you know about, then ask for the line to be checked before work starts. <a href=\"https://www.greenecountyohio.gov/DocumentCenter/View/178/Checklist---Sewer-Problems-PDF?bidId=\" target=\"_blank\" rel=\"noopener noreferrer\">The Greene County sewer FAQ</a> says the property owner is responsible for the lateral on private property, so it is worth asking whether the cleaning crew can also see the pipe's condition."
@@ -746,6 +858,13 @@ export const neighborhoods: Hood[] = [
         "ps": [
           "The builder describes new homes off New Germany Trebein Road with <a href=\"https://www.fischerhomes.com/new-homes/ohio/beavercreek/bent-creek-woods/\" target=\"_blank\" rel=\"noopener noreferrer\">walking paths, multiple ponds and homesites beside Beavercreek Golf Course</a>.",
           "Ponds and paths mean water management is part of the neighborhood. If a backup happens, ask where the problem sits before deciding what kind of work is needed."
+        ]
+      },
+      {
+        "h": "Which services should you ask about in Bent Creek Woods?",
+        "ps": [
+          "Ask what is blocking the line before asking for any method. If the answer is roots, <a href=\"/services/tree-root-intrusions/\">hydro jetting for tree roots</a> is the page to read, and if it is deposits, <a href=\"/services/mineral-and-scale-deposits/\">hydro jetting for mineral buildup</a> covers that case.",
+          "<a href=\"/services/severe-grease-and-sludge/\">Grease and sludge</a> and <a href=\"/services/recurring-clogs-and-slow-drains/\">recurring clogs and slow drains</a> cover the two most common reasons a household calls, and <a href=\"/guides/how-hydro-jetting-works/\">how hydro jetting works</a> covers what happens on the job. The <a href=\"/neighborhood/amberwood/\">Amberwood</a> page covers another part of Beavercreek."
         ]
       },
       {
@@ -796,6 +915,13 @@ export const neighborhoods: Hood[] = [
         ]
       },
       {
+        "h": "Which hydro jetting services come up in Amberwood?",
+        "ps": [
+          "A home in Amberwood with a drain that slows down again and again is the case <a href=\"/services/recurring-clogs-and-slow-drains/\">hydro jetting for recurring clogs and slow drains</a> walks through, and a kitchen line that backs up after cooking is the case for <a href=\"/services/severe-grease-and-sludge/\">hydro jetting for grease and sludge</a>.",
+          "If a line clears and then fails again, <a href=\"/services/tree-root-intrusions/\">hydro jetting for tree roots</a> explains how roots are found and what clearing them leaves unsolved. <a href=\"/guides/how-hydro-jetting-works/\">How hydro jetting works</a> describes the method itself. The <a href=\"/neighborhood/country-acres/\">Country Acres</a> page covers another part of Beavercreek."
+        ]
+      },
+      {
         "h": "What should an Amberwood homeowner ask?",
         "ps": [
           "Note which fixtures are slow, whether wastewater has backed up and any repairs you know about, then ask for the line to be checked before work starts. <a href=\"https://www.greenecountyohio.gov/DocumentCenter/View/178/Checklist---Sewer-Problems-PDF?bidId=\" target=\"_blank\" rel=\"noopener noreferrer\">The Greene County sewer FAQ</a> says the property owner is responsible for the lateral on private property, so it is worth asking whether the cleaning crew can also see the pipe's condition."
@@ -838,6 +964,13 @@ export const neighborhoods: Hood[] = [
         "h": "What do we know about drains in Country Acres?",
         "ps": [
           "<a href=\"https://www.greenecountyohio.gov/DocumentCenter/View/178/Checklist---Sewer-Problems-PDF?bidId=\" target=\"_blank\" rel=\"noopener noreferrer\">The Greene County sewer FAQ</a> says the property owner is responsible for repair and replacement of the lateral on private property, and recommends notifying the county to verify the right-of-way or sewer easement. That matters on larger lots, where a lateral can run a long way."
+        ]
+      },
+      {
+        "h": "What drain services do homeowners in Country Acres ask about?",
+        "ps": [
+          "Start with the symptom. Water that drains slowly again and again points to <a href=\"/services/recurring-clogs-and-slow-drains/\">recurring clogs and slow drains</a>, while scale or crust inside a line is covered under <a href=\"/services/mineral-and-scale-deposits/\">mineral buildup</a>.",
+          "Once a line is clear, <a href=\"/services/preventative-maintenance/\">preventative hydro jetting</a> covers keeping it that way, and <a href=\"/guides/hydro-jetting-vs-snaking/\">hydro jetting vs snaking</a> compares the two methods if you are deciding. Back on the <a href=\"/\">Beavercreek hydro jetting page</a>, every service for Beavercreek is listed. The <a href=\"/neighborhood/zimmer-estates/\">Zimmer Estates</a> page covers another part of Beavercreek."
         ]
       },
       {
@@ -884,6 +1017,13 @@ export const neighborhoods: Hood[] = [
         "ps": [
           "A Beavercreek Historical Society newsletter column about 1967 says <a href=\"https://beavercreekhistoricalsociety.org/wp-content/uploads/2017/12/Winter-2018-Vol27-No1-Log-by-Log.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Zimmer Estates opened a model home that year</a>, billed as total electric gold medallion homes, and notes the neighborhood now has about 2,800 residents.",
           "Pipe from that era may be a different material than newer lines. Ask what your line is made of, and whether the cleaning method suits it."
+        ]
+      },
+      {
+        "h": "How do the services fit homes in Zimmer Estates?",
+        "ps": [
+          "Each service page answers one question. <a href=\"/services/severe-grease-and-sludge/\">Grease and sludge</a> is for kitchen lines that back up, <a href=\"/services/tree-root-intrusions/\">tree roots</a> is for lines where roots may have gotten in, and <a href=\"/services/mineral-and-scale-deposits/\">mineral buildup</a> is for deposits that narrow a pipe over time.",
+          "If none of those sounds like your drain, <a href=\"/services/recurring-clogs-and-slow-drains/\">recurring clogs and slow drains</a> is the broader page, and <a href=\"/guides/how-hydro-jetting-works/\">how hydro jetting works</a> explains what the work involves before you ask anyone to do it. The <a href=\"/neighborhood/knollwood/\">Knollwood</a> page covers another part of Beavercreek."
         ]
       },
       {
