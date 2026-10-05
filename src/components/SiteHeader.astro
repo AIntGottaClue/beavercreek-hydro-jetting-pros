@@ -9,7 +9,7 @@ import { u } from '../lib/utils';
     <nav class="desktop-nav" aria-label="Main navigation">
       {navLinks.map((l) => (
         <div class="nav-item">
-          <a href={u(l.href)}>{l.label}</a>
+          <a class:list={['nav-parent', { 'has-dropdown': 'children' in l }]} href={u(l.href)}>{l.label}{'children' in l && <svg class="nav-chevron" aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="m2 4 4 4 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" /></svg>}</a>
           {'children' in l && (
             <div class="nav-sub"><div class="nav-sub-inner">
               {l.children.map((a) => <a href={u(a.href)}>{a.label}</a>)}
@@ -27,7 +27,7 @@ import { u } from '../lib/utils';
   <nav class="mobile-nav" id="mobile-navigation" aria-label="Mobile navigation" hidden>
     {navLinks.map((l) => (
       <>
-        <a href={u(l.href)}>{l.label}</a>
+        <a class:list={['nav-parent', { 'has-dropdown': 'children' in l }]} href={u(l.href)}>{l.label}{'children' in l && <svg class="nav-chevron" aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="m2 4 4 4 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" /></svg>}</a>
         {'children' in l && <div class="mobile-sub">{l.children.map((a) => <a href={u(a.href)}>{a.label}</a>)}</div>}
       </>
     ))}
@@ -45,3 +45,8 @@ import { u } from '../lib/utils';
     btn.textContent = open ? 'Close' : 'Menu';
   });
 </script>
+
+<style>
+.nav-parent.has-dropdown { display:inline-flex; align-items:center; gap:6px; }
+.nav-chevron { display:inline-block; flex:none; vertical-align:middle; width:12px; height:12px; }
+</style>
