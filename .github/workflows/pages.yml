@@ -21,7 +21,7 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
-          BASE: /kettering-hydro-jetting-pros
+          BASE: /beavercreek-hydro-jetting-pros
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
