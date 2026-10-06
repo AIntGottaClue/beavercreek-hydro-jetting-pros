@@ -35,7 +35,7 @@ const steps = [
     <p class="sec-lead">Both clear lines. Neither repairs a damaged pipe, and neither should be picked from the symptom alone.</p>
     <div class="cmp">
       <article class="cmp-card"><h3>Hydro jetting</h3>
-        <p set:html={`<a href="${EPA}" ${ext}>The EPA sewer cleaning guidance</a> describes jetting as aiming a high-pressure stream of water at the blockage or debris, with the nozzle shape changed to suit the surface.`} />
+        <p set:html={`The EPA sewer cleaning guidance describes jetting as aiming a high-pressure stream of water at the blockage or debris, with the nozzle shape changed to suit the surface.`} />
         <p>It is described as most effective in smaller, slow-flowing pipes.</p></article>
       <article class="cmp-card"><h3>Power rodding</h3>
         <p>A small rod with a blade attachment turns inside the pipe, loosening debris and cutting roots that reach into it.</p>
@@ -59,8 +59,8 @@ const steps = [
       <span class="sec-kicker">Local context</span>
       <h2 class="sec-title">Who handles what in Beavercreek</h2>
       <p class="sec-lead" style="margin:0">A drain problem can sit in the county main or in your own lateral. The county checks the first. The second is yours.</p>
-      <div class="callout-box"><p set:html={`<a href="${SA}" ${ext}>Greene County provides sewer service to Beavercreek</a>, and its sewer FAQ says to call the county when a sewer is backing up so it can check whether the problem is in the main or in your lateral.`} /></div>
-      <div class="callout-box"><p set:html={`<a href="${CITY}" ${ext}>Greene County describes Beavercreek</a> as an eastern Dayton suburb of more than 27 square miles, incorporated in 1980, though the area was first settled in the early 1800s.`} /></div>
+      <div class="callout-box"><p set:html={`Greene County provides sewer service to Beavercreek, and its sewer FAQ says to call the county when a sewer is backing up so it can check whether the problem is in the main or in your lateral.`} /></div>
+      <div class="callout-box"><p set:html={`Greene County describes Beavercreek as a city of more than 27 square miles, incorporated in 1980, though the area was first settled in the early 1800s.`} /></div>
     </div>
     <div class="lb-list">{neighborhoods.filter((n) => ['knollwood','hunters-ridge','sky-crossing','zimmer-estates'].includes(n.slug)).map((n) => <a class="lb" href={u(`/neighborhood/${n.slug}/`)}><h3>{n.name}</h3><p>{n.intro}</p></a>)}</div>
   </div></section>
