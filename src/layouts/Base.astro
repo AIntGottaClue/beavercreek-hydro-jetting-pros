@@ -58,5 +58,8 @@ const canonical = `${SITE_URL}${path}`;
         (typeof window.gtag === 'function' ? window.gtag : function () { (window.dataLayer = window.dataLayer || []).push(arguments); })('event', 'phone_call_tap', { page_path: location.pathname, link_url: a.getAttribute('href'), link_text: (a.textContent || '').trim().slice(0, 60) });
       }, true);
     </script>
-  </body>
+  <script is:inline>
+(function(){function run(){if(!('IntersectionObserver' in window))return;var forms=document.querySelectorAll('form[data-lead-form]');if(!forms.length)return;var fx=[].filter.call(document.querySelectorAll('body *'),function(e){return getComputedStyle(e).position==='fixed'&&!e.closest('header')&&(e.matches('a[href^="tel:"]')||e.querySelector('a[href^="tel:"]'))&&e.getClientRects().length});if(!fx.length)return;fx.forEach(function(e){e.style.transition='opacity .2s ease'});var vis=new Set();var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){vis.add(x.target)}else{vis.delete(x.target)}});fx.forEach(function(e){e.style.opacity=vis.size?'0':'';e.style.pointerEvents=vis.size?'none':''})});forms.forEach(function(f){io.observe(f)})}if(document.readyState==='complete'){run()}else{window.addEventListener('load',run)}})();
+</script>
+</body>
 </html>
