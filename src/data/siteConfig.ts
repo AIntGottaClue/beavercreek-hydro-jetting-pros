@@ -4,6 +4,6 @@ export const siteConfig = {
   origin: 'https://beavercreekhydrojetting.prosapp.site',
   phoneDisplay: '(877) 761-0283',
   phoneHref: '+18777610283',
-  ga4MeasurementId: '',
+  ga4MeasurementId: 'G-EY9HE963XW',
   airchattyTrackingId: 'tk_61d238e145314251999b74fdd5c953cf',
 } as const;
